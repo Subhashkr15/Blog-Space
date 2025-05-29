@@ -56,10 +56,10 @@ export default function Post() {
                         
                     )}
                 </div>
-                <div className="w-full py-4 px-2 text-wrap bg-white/50 border border-white rounded-xl ">
-                    <h1 className="text-2xl font-bold py-3 ">{post.title}</h1>
+                <div className="w-full py-4 px-2  flex flex-col justify-center items-center text-wrap bg-white/50 border border-white rounded-xl ">
+                   <div><h1 className="text-2xl font-bold py-3">{post.title}</h1></div> 
             
-                    {parse(post.content)}
+                    <div>{parse(post.content)}</div>
                 </div>
             </Container>
         </div>
