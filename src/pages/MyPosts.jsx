@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import appwriteService from '../appwrite/config';
+import appwriteService from '../appwrite/config.js';
 import { Container, PostCard } from '../components/Index.js';
-import Loading from '../components/Loading';
+import Loading from '../components/Loading.jsx';
 
 function MyPosts() {
     const [posts, setPosts] = useState([]);
