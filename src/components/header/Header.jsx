@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import { Container, Logo, LogoutBtn } from '../index';
+import { Container, Logo, LogoutBtn } from '../Index.js';
 import { useState } from 'react';
 
 function Header() {
@@ -29,8 +29,8 @@ function Header() {
             active: !authStatus,
         },
         {
-            name: 'All Posts',
-            slug: '/all-posts',
+            name: 'My Posts',
+            slug: '/my-posts',
             active: authStatus,
         },
         {
