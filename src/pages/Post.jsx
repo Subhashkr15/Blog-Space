@@ -35,11 +35,11 @@ export default function Post() {
     return post ? (
         <div className="py-8">
             <Container>
-                <div className="w-full  flex justify-center mb-1 relative border border-white rounded-xl p-2 bg-white/50">
+                <div className="w-full flex justify-center mb-1 relative border border-white rounded-xl p-2 bg-white/50">
                     <img
                         src={appwriteService.getFilePreview(post.featuredImage)}
                         alt={post.title}
-                        className="rounded-xl"
+                        className=" md:w-3/5 rounded-xl"
                     />
 
                     {isAuthor && (
