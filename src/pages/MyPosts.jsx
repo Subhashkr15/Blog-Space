@@ -30,7 +30,7 @@ function MyPosts() {
                                 .map((post) => (
                                     <div
                                         key={post.$id}
-                                        className="p-2 w-1/2 mx-auto"
+                                        className="p-2 w-full mx-auto"
                                     >
                                         <PostCard {...post} />
                                     </div>
