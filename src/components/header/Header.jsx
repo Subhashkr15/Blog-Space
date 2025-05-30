@@ -57,7 +57,7 @@ function Header() {
                             <div className='w-5 h-1 bg-black'></div>
                         </div>
                     </div>
-                    <ul className={`${navopen ? 'flex flex-col top-0' : ' flex flex-col -top-96 gap-7'} md:hidden -z-20 transition-all duration-500 bg-[#efefef] bg-opacity-90 backdrop-filter backdrop-blur-lg items-center right-0 p-10 gap-7 w-full absolute md:gap-4 `}>
+                    <ul className={`${navopen ? 'flex flex-col top-4' : ' flex flex-col -top-96 gap-7'} md:hidden -z-20 transition-all duration-500 bg-[#efefef] bg-opacity-90 backdrop-filter backdrop-blur-lg items-center right-0 p-10 gap-7 w-full absolute md:gap-4 `}>
                         {navItems.map((item) =>
                             item.active ? (
                                 <li key={item.name}>
