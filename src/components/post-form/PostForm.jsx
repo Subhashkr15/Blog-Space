@@ -105,7 +105,7 @@ export default function PostForm({ post }) {
       </div>
       <div className="w-1/3 px-2">
         <Input
-          label="Featured Image :"
+          label="Featured Image (png / jpg / jpeg / gif):"
           type="file"
           className="mb-4"
           accept="image/png, image/jpg, image/jpeg, image/gif"
