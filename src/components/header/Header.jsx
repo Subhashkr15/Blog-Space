@@ -1,12 +1,19 @@
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { Container, Logo, LogoutBtn } from '../Index.js';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Header() {
     const [navopen, setnavOpen] = useState(false)
     const authStatus = useSelector((state) => state.auth.status);
     const navigate = useNavigate();
+
+    useEffect(() => {
+      if(!authStatus){
+        navigate("/login")
+      }
+    }, [authStatus])
+    
 
     const handlenavopen = () => {
         setnavOpen(!navopen);
