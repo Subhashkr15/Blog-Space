@@ -84,7 +84,10 @@ function Signup() {
                 })}
               />
               <button
-                onClick={() => setShowPassword((prev) => !prev)}
+                onClick={(event) => {
+                  event.preventDefault();
+                  setShowPassword((prev) => !prev);
+                }}
                 style={{
                   position: "absolute",
                   right: 10,

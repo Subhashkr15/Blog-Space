@@ -96,6 +96,8 @@ export class Service {
   async getUserId() {
     const user = await authService.getCurrentUser();
     if (user) {
+      if (!user.$id) console.log("no $id inside user");
+
       return user.$id;
     } else {
       console.log("No user is currently logged in");
