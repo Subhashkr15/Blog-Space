@@ -107,7 +107,7 @@ export default function PostForm({ post }) {
         <Input
           label="Featured Image (png / jpg / jpeg / gif):"
           type="file"
-          className="mb-4 file:mr-2 file:py-0.5 md:file:py-1 file:px-0.5 md:file:px-2 file:rounded-md file:border-1 file:text-sm md:file:text-base file:font-semibold hover:file:bg-gray-200 file:cursor-pointer file:text-blue-600 "
+          className="mb-4 file:mr-2 file:py-0.5 md:file:py-1 file:px-0.5 md:file:px-2 file:rounded-md file:border-1 file:text-sm md:file:text-base file:font-semibold hover:file:bg-gray-200 file:cursor-pointer file:text-blue-500 "
           accept="image/png, image/jpg, image/jpeg, image/gif"
           {...register("image", { required: !post })}
         />
