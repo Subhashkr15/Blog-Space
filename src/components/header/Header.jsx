@@ -73,7 +73,7 @@ function Header() {
                                             navigate(item.slug)
                                             setnavOpen(false)
                                         }}
-                                        className="inline-bock py-2 px-3 rounded-full  hover:text-white bg-gray-200 hover:bg-gradient-to-r from-[#8a6aff] to-[#dda6ff]"
+                                        className="inline-bock py-2 px-3 rounded-full  md:hover:text-white bg-gray-200 md:hover:bg-gradient-to-r from-[#8a6aff] to-[#dda6ff] active:text-white active:bg-gradient-to-r from-[#8a6aff] to-[#dda6ff]"
                                     >
                                         {item.name}
                                     </button>
